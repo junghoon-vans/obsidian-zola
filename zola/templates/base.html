@@ -1,5 +1,6 @@
 {%- import 'macros/head.html' as macros_head -%}
 {% import 'macros/math.html' as macros_math -%}
+{% import 'macros/mermaid.html' as macros_mermaid -%}
 {% import 'macros/header.html' as macros_header -%}
 {% import 'macros/footer.html' as macros_footer -%}
 {% import 'macros/javascript.html' as macros_js -%}
@@ -29,6 +30,7 @@
 
 {{ macros_head::favicons() }}
 {% block math %}{{ macros_math::math() }}{% endblock math %}
+{% block mermaid %}{{ macros_mermaid::mermaid() }}{% endblock mermaid %}
 </head>
 {% block body %}{% set page_class="home" %}{% endblock body %}
 <body class="{{ page_class }}">
