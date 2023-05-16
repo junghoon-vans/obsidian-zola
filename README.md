@@ -114,6 +114,7 @@ The [example site](https://peteryuen.netlify.app/) shows the capabilities of `ob
 - Single-line footnotes (i.e. `[^1]` in the paragraph and `[^1]: xxx` later)
 - Checkboxes
 - Link escaping pattern: `[Slides Demo](<Slides Demo>)`
+- Mermaid Diagrams
 
 **Unsupported**
 
@@ -122,7 +123,6 @@ The [example site](https://peteryuen.netlify.app/) shows the capabilities of `ob
 - Highlighting text
 - Comments
 - Inline / Multi-line footnotes
-- Mermaid Diagrams
 
 # Gotchas
 1. Do not have files with name `index.md` or `_index.md`
