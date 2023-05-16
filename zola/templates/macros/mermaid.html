@@ -1,0 +1,22 @@
+{% macro mermaid() %}
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll("code.language-mermaid");
+        for (const element of elements) {
+            const diagram = element.textContent.trim();
+            const container = document.createElement("div");
+            container.classList.add("mermaid");
+            container.textContent = diagram;
+            element.replaceWith(container);
+        }
+
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark'
+        });
+    });
+</script>
+
+{% endmacro %}
